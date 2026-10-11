@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Layan Hasan</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">CodeWithLayan</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-section">
+    <h1><span class="cmt">// </span>My Blog</h1>
+    <p class="subtitle">I write about tech, code, and everything in between. Here's what I'm learning and building.</p>
+
+    <div class="blog-grid">
+
+      <div class="blog-card">
+        <h2> Building a Task Manager with React Native</h2>
+        <p class="blog-date">August 28, 2026</p>
+        <p>
+          My ToDo App was my first real dive into React Native. I wanted to get comfortable with the core building blocks: components, screens, and navigation before jumping into anything more complex on mobile.
+        </p>
+        <p>
+          Tasks are managed with local component state, so add, complete, and delete actions all update the UI instantly without hitting any backend. I spent most of my time getting navigation between screens to feel smooth, and learning how React Native's layout system differs from plain CSS on the web.
+        </p>
+        <p>
+          It was a good reminder that the fundamentals state, props, and component structure carry over from React to React Native, even when the styling and navigation patterns are completely different.
+        </p>
+      </div>
+
+      <div class="blog-card">
+        <h2> Building a Lead Qualification Workflow in n8n</h2>
+        <p class="blog-date">September 15, 2026</p>
+        <p>
+          Being so fascinated by AI Automation I decided to explore it by building a workflow in n8n that starts the moment someone submits a form. It reads the budget they entered and decides whether the lead is a fit, then sends the right email without me touching anything.
+        </p>
+        <p>
+          A Switch node splits the flow into two branches based on budget rules. Leads who meet the budget get an acceptance email through Gmail, and the rest get a polite decline. Each branch then appends a row to Google Sheets, so I always have a record of who applied and what they were told.
+        </p>
+        <p>
+          This project pushed me to think in triggers and branches instead of code line by line. Getting the Switch rules right and mapping form fields into the email and sheet nodes took the most testing.
+        </p>
+      </div>
+
+      <div class="blog-card">
+        <h2> Building an AI Quiz Generator with React, FastAPI, and Gemini</h2>
+        <p class="blog-date">August 2, 2026</p>
+        <p>
+          To get more comfortable with Full-stack development i started this project that generates custom quizzes from any topic a user types in, using the Gemini API to write the questions. I built the frontend in React.js and a FastAPI backend to handle the prompt logic and parse Gemini's responses into a clean, structured format.
+        </p>
+        <p>
+          The biggest challenge was getting consistent, well-formatted output from the model so the frontend could reliably render questions and answer options. I ended up being very explicit in my prompts about the exact JSON shape I needed back, which made parsing on the FastAPI side much more predictable.
+        </p>
+        <p>
+          Working across the React frontend and FastAPI backend gave me a much clearer picture of how a full-stack AI app actually fits together, from user input all the way to a validated API response.
+        </p>
+      </div>
+
+      <div class="blog-card">
+        <h2> Building My Portfolio Site from Scratch</h2>
+        <p class="blog-date">June 20, 2025</p>
+        <p>
+          I decided to build my personal portfolio website using only HTML, CSS, and JavaScript — no frameworks, no templates, just raw code. The goal was to learn how layout, responsiveness, and deployment work from the ground up.
+        </p>
+        <p>
+          The site is fully mobile-responsive, with a dark-tech aesthetic and minimal UI inspired by developer portfolios. I host it on GitHub Pages so that it's free, fast, and easy to maintain. Styling is done using custom CSS, and I’ve avoided any libraries to keep performance sharp.
+        </p>
+        <p>
+          This project helped me understand grid layouts, media queries, and version control with Git. I also added smooth transitions and button hover effects to keep the UI interactive and clean.
+        </p>
+      </div>
+
+      <div class="blog-card">
+        <h2> What I Learned Building a Python Medication Tracker</h2>
+        <p class="blog-date">June 10, 2024</p>
+        <p>
+          My Pet Health Tracker was an academic project of DSA, a desktop GUI app with full CRUD functionality, letting users manage pet profiles, vet history, and medication schedules in one place.
+        </p>
+        <p>
+          For storing pet profiles, I used a simple list structure to keep things dynamic and easy to update. Medication history is stored in a dictionary keyed by pet ID, which made lookups fast and straightforward. The interface is built with Python's GUI tools, wiring up each CRUD action to its own event handler.
+        </p>
+        <p>
+          This project boosted my understanding of GUI programming in Python and how to pair core data structures with a real-world application. Getting the CRUD operations to update the interface cleanly was the trickiest part, but it taught me a lot about keeping application state and UI in sync.
+        </p>
+      </div>
+
+      <div class="blog-card">
+        <h2> Debugging the Playlist Manager (C++)</h2>
+        <p class="blog-date">May 25, 2024</p>
+        <p>
+          I built a music playlist manager using a doubly linked list in C++. The app allows users to add, delete, and search songs. It even includes logic to find the mid-track and sort the playlist alphabetically.
+        </p>
+        <p>
+          One tricky bug I faced was accidentally corrupting the `prev` pointer when deleting the head node. It helped me understand edge cases in pointer manipulation better. I also learned how to reverse traverse the list for “previous track” functionality.
+        </p>
+        <p>
+          This project really taught me that mastering DSA isn't about memorizing, it's about solving problems with structure. Debugging pointer-based logic improved my thinking around memory, structure, and algorithm efficiency.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+   <p>© 2026 CodeWithLayan. All rights reserved.</p>   
+  </footer>
+
+</body>
+</html>

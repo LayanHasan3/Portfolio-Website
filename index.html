@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | CodeWithLayan </title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CodeWithLayan</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/profile.jpeg" alt="Layan Hasan" class="profile-pic">
+   <h1 class="typewriter"><span id="type-text"></span><span class="cursor">|</span></h1>
+
+    <p>A Computer Science student who builds cool tech with code.</p>
+    <div class="tech-stack">
+      <span>HTML/CSS/JS</span>
+      <span>Python </span>
+      <span>React</span>
+      <span>FastAPI</span>
+      <span>AI Product Design</span>
+      <span>AI Automations </span>
+    </div>
+    <div class="cta-buttons">
+      <a href="projects.html" class="btn">View Projects</a>
+      <a href="blog.html" class="btn-outline">Read Blog</a>
+    </div>
+  </section>
+
+  <section class="Featured Projects" id="projects" data-aos="fade-left">
+    <h2><span class="cmt">// </span>Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+        <h3>Pet Health Tracker</h3>
+      <p>Built a desktop GUI-based application featuring full CRUD (Create, Read, Update, Delete) functionality to help users manage pet health schedules.</p>
+      <a href="projects.html#pet-health" class="btn-outline">View Project</a>  
+        </div>
+
+        <div class="project-card">
+      <h3>AI Quiz Generator</h3>
+      <p>Built a full-stack web app that generates custom quizzes from user-provided topics using the Gemini API. 
+        Developed a React.js frontend for quiz creation and taking, backed by a Python FastAPI service handling prompt logic and response parsing.</p>
+      <a href="projects.html#ai-quiz-generator" class="btn-outline">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>You're looking at it Built with HTML, CSS, JavaScript and hosted on GitHub Pages.</p>
+      <a href="projects.html#portfolio" class="btn-outline">See Details</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Lead Qualification</h3>
+      <p>An n8n workflow that starts when a lead submits a form, checks their budget, and sends an accept or decline email through Gmail. Every lead and its outcome is then recorded in Google Sheets.</p>
+      <a href="projects.html#lead-automation" class="btn-outline">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <h3>DailyTasks</h3>
+      <p>A task management app built with React Native, using core components, navigation, and local state management to track and organize tasks.</p>
+      <a href="projects.html#todo-app" class="btn-outline">View Project</a>
+    </div>
+
+    </div>
+  </section>
+
+    <div class="cv-cta">
+    <a href="assets/files/Resume_LayanHassan.pdf" download class="btn">Download CV</a>
+  </div>
+
+  <section class="about" id="about" data-aos="fade-up">
+    <h2><span class="cmt">// </span>About Me</h2>
+    <div class="about-card">
+      <p>I'm Layan Hasan, a Computer Science student at the University of Karachi who enjoys turning ideas into working software. My work spans full-stack web apps, AI-powered tools, and automated workflows — I've built quiz generators backed by the Gemini API, wired up n8n automations that qualify leads and send emails, and put together desktop and mobile apps using core data structures like linked lists and hash maps.</p>
+      <p>I like working across the whole stack: designing interfaces in Figma, building APIs with FastAPI and React, and making sure the end result is clean and usable. Outside of code, I've studied SEO and digital marketing to round out how I think about building for real users. Always looking to pick up new tools.</p>
+    </div>
+  </section>
+
+  <section class="education" id="education" data-aos="fade-right" >
+    <h2><span class="cmt">// </span>Education</h2>
+    <div class="timeline">
+    <div class="edu-item">
+    <h3>BS Computer Science</h3>
+      <p>University of Karachi — 2023 - Present</p>
+    </div> 
+      <div class="edu-item">
+      <h3>Intermediate (Computer Science)</h3>
+      <p>Commecs College — 2021 - 2023</p>
+    </div>
+    <div class="edu-item">
+      <h3>Matriculation (Science)</h3>
+      <p>KBV CAA Model School 3 — 2008 - 2021</p>
+    </div>
+    </div>
+  </section>
+
+ <!-- Certifications Section -->
+<section class="education" id="certifications" data-aos="fade-up">
+  <h2><span class="cmt">// </span>Certifications</h2>
+  <div class="timeline">
+    <div class="edu-item">
+      <h3>Digital Marketing & SEO Fundamentals</h3>
+      <p>Covered Keyword Research, On-Page SEO, Content Strategy, Blog Writing, and Organic Marketing principles.</p>
+    </div>
+  </div>
+</section>
+
+ <!-- Skills Section -->
+<section class="skills" id="skills" data-aos="fade-up">
+  <h2><span class="cmt">// </span>Skills & Tools</h2>
+
+  <div class="skills-grid">
+    <span><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript" title="JavaScript" /></span>
+    <span><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" title="HTML" /></span>
+    <span><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" title="Python" /></span>
+    <span><img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" title="React / React Native" /></span>
+    <span><img src="https://cdn.simpleicons.org/fastapi/009688" alt="FastAPI" title="FastAPI" /></span>
+    <span><img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" title="Figma" /></span>
+    <span><img src="https://cdn.simpleicons.org/n8n/EA4B71" alt="n8n" title="n8n" /></span>
+    <span><img src="https://cdn.simpleicons.org/git/F05032" alt="Git" title="Git" /></span>
+    <span><img src="https://cdn.simpleicons.org/github/white" alt="GitHub" title="GitHub" /></span>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2026 CodeWithLayan. All rights reserved.</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<script>
+  const codeLine = 'const developer = "Layan Hasan";';
+  let i = 0;
+  const speed = 55; // Typing speed in ms
+
+  function typeWriter() {
+    const el = document.getElementById("type-text");
+    if (i < codeLine.length) {
+      el.textContent += codeLine.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    } else {
+      highlightSyntax();
+    }
+  }
+
+  function highlightSyntax() {
+    const el = document.getElementById("type-text");
+    el.innerHTML =
+      '<span class="code-kw">const</span> developer ' +
+      '<span class="code-punc">=</span> ' +
+      '<span class="code-str">&quot;Layan Hasan&quot;</span>' +
+      '<span class="code-punc">;</span>';
+  }
+
+  window.addEventListener("DOMContentLoaded", typeWriter);
+</script>
+
+</body>
+</html>
